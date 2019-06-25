@@ -5,18 +5,36 @@
     <meta charset="UTF-8">
     <title>Contact | Your Name</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    
 </head>
 
 <body>
     <header id="masthead">
-        <div class="container">
-            <a href="index.html" id="logo">Batman</a>
-            <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
-                <a href="index.html">About</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact</a>
-            </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                            <a class="nav-link" href="index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item active">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>   
+        
+        
+        <!-- <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+                    <a href="index.html">About</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html">Contact</a>
+                </nav> -->
+        <div class="form-group">
+            <a href="index.html" id="logo"></a>
+           
         </div>
     </header>
     <div id="main-container" class="container">
@@ -26,15 +44,18 @@
                 <ul>
                     <li>
                         <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+                        <input class="form-control" type="text" placeholder="Default input">
+                        <!-- <input type="text" id="name" name="name" placeholder="John Smith" required="required"> -->
                     </li>
                     <li>
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+                        <input class="form-control" type="text" placeholder="Default input">
+                        <!-- <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required"> -->
                     </li>
                     <li>
                         <label for="message">Message</label>
-                        <textarea id="message" name="message" required="required"></textarea>
+                        <input class="form-control" type="text" placeholder="Default input">
+                        <!-- <textarea id="message" name="message" required="required"></textarea> -->
                     </li>
                 </ul>
                 <input type="submit">
